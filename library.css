@@ -1,0 +1,30 @@
+#display {
+    display: grid;
+    height: 100px;
+    width: 100px;
+}
+
+.bookCard {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    background-color: rgb(169, 194, 214);
+    padding: 10px;
+    margin: 20px;
+    list-style: none;
+}
+
+.bookData {
+    background-color: rgb(151, 185, 175);
+    list-style: none;
+}
+
+body {
+    background-color: rgb(151, 185, 175);
+}
+
+.removeButton {
+
+}
