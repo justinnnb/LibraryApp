@@ -6,7 +6,7 @@
 
 .bookCard {
     width: 30%;
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items:flex-start;
     flex-direction: column;
@@ -27,4 +27,8 @@ body {
 
 .removeButton {
 
+}
+
+button {
+    margin-top: 5px;
 }
