@@ -3,6 +3,7 @@ let myLibrary = [];
 
 
 let removebuttons = document.getElementsByClassName("removeButton")
+let readButton = document.getElementsByClassName("readButton")
 
 
 class Book {
@@ -30,8 +31,9 @@ function displayBook (item) {
     let listRead = document.createElement("li")
     let removeButton = document.createElement("button")
     let readButton = document.createElement("button")
+    let containerBooks = document.querySelectorAll(".container-books")
     
-    document.body.appendChild(div)
+    containerBooks[0].appendChild(div)
     div.className = "bookCard"
     div.id = myLibrary.indexOf(item)
     listName.textContent = item.name
@@ -74,4 +76,20 @@ document.body.addEventListener("click", function (event){
         event.target.parentNode.remove()
         }
 })
+
+document.body.addEventListener("click", function (event){
+        if ( event.target.className == "readButton") {
+        let x = myLibrary.indexOf(Book.name)
+        event.target.parentNode.style.border = "2px solid #FCD34D";
+        
+        let closestReadButton = event.target.closest(".readButton");
+
+        closestReadButton.textContent = "Booked Read"
+        closestReadButton.style.border = "none";
+        closestReadButton.style.margin = "6px 2px";
+        closestReadButton.style.marginBottom = "2px";
+        }
+})
+
+
 

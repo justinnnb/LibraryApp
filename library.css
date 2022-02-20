@@ -1,19 +1,32 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #BFDBFE;
+}
+
 #display {
     display: grid;
     height: 100px;
     width: 100px;
 }
 
+.container-books {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+}
+
 .bookCard {
-    width: 30%;
+    width: 300px;
     height: 150px;
     display: flex;
     align-items:flex-start;
     flex-direction: column;
-    background-color: rgb(169, 194, 214);
+    background-color: #60A5FA;
     padding: 10px;
     margin: 20px;
     list-style: none;
+    border-radius: 14px;
+    border: 2px solid #93C5FD;
 }
 
 .bookData {
@@ -22,13 +35,15 @@
 }
 
 body {
-    background-color: rgb(151, 185, 175);
+    background-color: #93C5FD;
 }
 
 .removeButton {
-
 }
 
 button {
     margin-top: 5px;
+    background-color: #1E40AF;
+    border-radius: 14px;
+    border-color: #FCD34D;
 }
