@@ -8,11 +8,31 @@
     <title>My Library</title>
 </head>
 <body>
-<div id="display"></div>
-<button id="showBooks"> Show Books</button>
-<button id="addBooks"> Add Books</button>
-
-<div class="container-books"></div>
+    <div class="container-library">
+        <div id="display"></div>
+        <button id="showBooks"> Show Books</button>
+        <button id="addBooks"> Add Books</button>
+        <div class="container-books"></div>
+    </div>
+    <div class="container-addBook">
+        <div class="container-AddBookForm">
+            <form action="#" class="addBook">
+                <div>
+                <label for="book-name"> Book Name: </label>
+                <input type="text" id="book-name" name="book-name"></div>
+                <div>
+                <label for="page-number"> Page Number: </label>
+                <input type="number" id="page-number" name="page-number"></div>
+                <div>
+                <label for="read-status"> Unread: </label>
+                <input type="radio" id="read-status" name="read-status"></div>
+                <label for="read-status"> Read: </label>
+                <input type="radio" id="read-status" name="read-status"></div>
+                <button type="reset">Reset</button>
+                <button type="submit">Add Books</button>
+            </form>
+        </div>
+    </div>
 <script src=library.js>
 
 </script>

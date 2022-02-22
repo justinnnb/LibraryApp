@@ -36,6 +36,7 @@
 
 body {
     background-color: #93C5FD;
+    display: flex;
 }
 
 .removeButton {
@@ -47,3 +48,9 @@ button {
     border-radius: 14px;
     border-color: #FCD34D;
 }
+
+.addBook {
+    
+}
+
+  
