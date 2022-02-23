@@ -84,7 +84,7 @@ document.body.addEventListener("click", function (event){
         
         let closestReadButton = event.target.closest(".readButton");
 
-        closestReadButton.textContent = "Booked Read"
+        closestReadButton.textContent = "Book Read"
         closestReadButton.style.border = "none";
         closestReadButton.style.margin = "6px 2px";
         closestReadButton.style.marginBottom = "2px";
