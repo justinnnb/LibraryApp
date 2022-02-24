@@ -39,9 +39,8 @@ function displayBook (item) {
     listName.textContent = item.name
     listPages.textContent = item.pages
     listRead.textContent = item.read
-    div.appendChild(listName)
-    div.appendChild(listPages)
-    div.appendChild(listRead)
+    div.appendChild(listName, listPages, listRead)
+
 
     div.appendChild(readButton)
     readButton.className = "readButton"
@@ -57,9 +56,9 @@ myLibrary.forEach(Book => {
 })
 
 function addBookToLibrary(item) {
-        let bookName = prompt("Enter book name.")
-        let pageNumber = prompt("Enter number of pages.")
-        let readStatus = prompt("Have you read it?")
+        let bookName = bookname.value
+        let pageNumber = pagenumber.value
+        let readStatus = readstatus.value
         const newBook = new Book(bookName, pageNumber, readStatus)
         myLibrary.push(newBook)
         displayBook(newBook)

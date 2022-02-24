@@ -18,18 +18,18 @@
     </div>
     <div class="container-addBook">
         <div class="container-AddBookForm">
-            <form action="#" class="addBook">
+            <form method="get" class="addBook" onsubmit="addBookToLibrary()">
             
-                <label for="book-name"> Book Name: </label>
-                <input type="text" id="book-name" name="book-name">
+                <label for="bookname"> Book Name: </label>
+                <input type="text" id="bookname" name="bookname">
             
-                <label for="page-number"> Page Number: </label>
-                <input type="number" id="page-number" name="page-number">
+                <label for="pagenumber"> Page Number: </label>
+                <input type="number" id="pagenumber" name="pagenumber">
             
-                <label for="read-status"> Unread: </label>
-                <input type="radio" id="read-status" name="read-status">
-                <label for="read-status"> Read: </label>
-                <input type="radio" id="read-status" name="read-status">
+                <label for="readstatus"> Unread: </label>
+                <input type="radio" id="readstatus" name="readstatus" value="Unread">
+                <label for="readstatus"> Read: </label>
+                <input type="radio" id="readstatus" name="readstatus" value="Read">
                 <button class="buttons" type="submit">Add Books</button>
                 <button class="buttons" type="reset">Reset</button>
             </form>

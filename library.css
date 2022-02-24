@@ -64,7 +64,7 @@ nav {
 form {
     padding-top: 100px;
     display: grid;
-    grid-template-columns: 96px 248px
+    grid-template-columns: 96px 248px;
 }
 
 form button {
@@ -81,6 +81,10 @@ button {
     background-color: #1E40AF;
     border-radius: 14px;
     border-color: #FCD34D;
+}
+
+input[type="radio"] {
+    justify-self: left;
 }
 
 .addBook {
