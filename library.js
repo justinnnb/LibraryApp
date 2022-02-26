@@ -17,8 +17,8 @@ class Book {
     }
 }
 
-const theHobbit = new Book("The Hobbit by J.R.R. Tolkien", "295 pages" , "not read yet")
-const HarryPotter = new Book("Harry Potter and the Goblet of Fire", "500 pages" , "not read yet")
+const theHobbit = new Book("The Hobbit by J.R.R. Tolkien", "295 pages" , "Unread")
+const HarryPotter = new Book("Harry Potter and the Goblet of Fire", "500 pages" , "Unread")
 
 
 myLibrary.push(theHobbit);
@@ -39,8 +39,9 @@ function displayBook (item) {
     listName.textContent = item.name
     listPages.textContent = item.pages
     listRead.textContent = item.read
-    div.appendChild(listName, listPages, listRead)
-
+    div.appendChild(listName)
+    div.appendChild(listPages)
+    div.appendChild(listRead)
 
     div.appendChild(readButton)
     readButton.className = "readButton"
@@ -58,10 +59,11 @@ myLibrary.forEach(Book => {
 function addBookToLibrary(item) {
         let bookName = bookname.value
         let pageNumber = pagenumber.value
-        let readStatus = readstatus.value
+        let readStatus = document.querySelector('input[name="readstatus"]:checked').value
         const newBook = new Book(bookName, pageNumber, readStatus)
         myLibrary.push(newBook)
         displayBook(newBook)
+        event.preventDefault()
 }
 
 document.querySelector("#addBooks").addEventListener("click", function() {

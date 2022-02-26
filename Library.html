@@ -18,7 +18,7 @@
     </div>
     <div class="container-addBook">
         <div class="container-AddBookForm">
-            <form method="get" class="addBook" onsubmit="addBookToLibrary()">
+            <form class="addBook" onsubmit="addBookToLibrary()">
             
                 <label for="bookname"> Book Name: </label>
                 <input type="text" id="bookname" name="bookname">
@@ -27,7 +27,7 @@
                 <input type="number" id="pagenumber" name="pagenumber">
             
                 <label for="readstatus"> Unread: </label>
-                <input type="radio" id="readstatus" name="readstatus" value="Unread">
+                <input type="radio" id="readstatus" name="readstatus" value="Unread" required>
                 <label for="readstatus"> Read: </label>
                 <input type="radio" id="readstatus" name="readstatus" value="Read">
                 <button class="buttons" type="submit">Add Books</button>
